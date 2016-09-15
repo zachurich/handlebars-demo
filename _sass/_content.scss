@@ -2,6 +2,16 @@
  Define Flex Styles Here
 */
 
+section {
+  padding: 100px 0;
+  .container {
+    width: 100%;
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+}
+
 .flex-column--center {
   flex-direction: column;
   @extend %flex-center;

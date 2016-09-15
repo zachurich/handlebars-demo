@@ -17,3 +17,13 @@ To get started using gulp:
 3. Run "gulp" to compile SASS into CSS
 
 That's it!
+
+-- -- -- --
+
+### Inspiration
+
+1. http://devtipsshow.com/
+
+2. http://www.usequarry.com/
+
+3. http://www.fieldy.co/

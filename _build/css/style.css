@@ -63,6 +63,12 @@ textarea, textarea:focus {
   outline: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
 
+input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none; }
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none; }
@@ -636,6 +642,14 @@ body {
 /*
  Define Flex Styles Here
 */
+section {
+  padding: 100px 0; }
+  section .container {
+    width: 100%;
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 0 50px; }
+
 .flex-column--center {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -671,5 +685,41 @@ textarea {
 /*
   Styles for the footer
 */
+footer {
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+  height: 80px; }
+  footer .container p {
+    display: inline-block;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    line-height: 80px;
+    color: #3F61A6;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin-left: 20px; }
+  footer .container .social-icons {
+    display: inline-block;
+    height: 100%;
+    line-height: 80px;
+    float: right;
+    margin-left: 60px; }
+    @media screen and (max-width: 665px) {
+      footer .container .social-icons {
+        margin-left: 0; } }
+    footer .container .social-icons a {
+      line-height: 80px;
+      display: inline-block;
+      color: #666;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 45px;
+      -webkit-transition: 0.15s ease-in-out;
+      transition: 0.15s ease-in-out; }
 
 /*# sourceMappingURL=style.css.map */

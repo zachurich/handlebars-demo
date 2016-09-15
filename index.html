@@ -5,6 +5,7 @@
   <title>Document</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale="1.0", user-scalable="no">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/2df561a7f4.js"></script>
   <script src="js/handlebars-v4.0.5.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,6 +18,28 @@
         <h2>{{hero.subhead}}</h2>
       </div>
     </div>
+    <section id="section-1">
+      <div class="container">
+        <div class="grid">
+          <div class="grid__col grid__col--12-of-12">
+            <div class="flex-column--center">
+              <p>{{content.section1.detail}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+      <p>Copyright 2016</p>
+        <div class="social-icons">
+          <a class="{{footer.social1.class}}" href="{{footer.social1.url}}"></a>
+          <a class="{{footer.social2.class}}" href="{{footer.social2.url}}"></a>
+          <a class="{{footer.social3.class}}" href="{{footer.social3.url}}"></a>
+        </div>
+      </div>
+    </footer>
   </script>
 
 
