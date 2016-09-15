@@ -1,0 +1,13 @@
+/*
+ Define Flex Styles Here
+*/
+
+.flex-column--center {
+  flex-direction: column;
+  @extend %flex-center;
+}
+
+.flex-row--center {
+  flex-direction: row;
+  @extend %flex-center;
+}

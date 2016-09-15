@@ -1,0 +1,10 @@
+/*
+  Let's keep out extends in here
+*/
+
+// Extend this for flex-centering
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

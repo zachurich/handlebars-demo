@@ -1,0 +1,19 @@
+/*
+  Styles for the hero section
+*/
+
+.hero {
+  background: $mainColor;
+  padding: 100px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1,
+  h2 {
+    color: $mainColorShade;
+  }
+  h2 {
+    margin-top: 20px;
+  }
+}
