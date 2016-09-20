@@ -1,4 +1,4 @@
-## Project 3
+## A little handlebars demo
 
 ### This project uses gulp.js as it's primary build system for compiling SASS into normal CSS
 
