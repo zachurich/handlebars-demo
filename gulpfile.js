@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
+const imageop = require('gulp-image-optimization')
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const concat = require('gulp-concat');
@@ -19,11 +20,19 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./'));
 });
 
+gulp.task('images', function(cb) {
+    gulp.src(['images/*.png','images/*.jpg','src/*.jpeg']).pipe(imageop({
+        optimizationLevel: 5,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('images/')).on('end', cb).on('error', cb);
+});
+
 // SASS watch task
 gulp.task('watch', function () {
   gulp.watch('./_sass/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['sass', 'watch'], function() {
+gulp.task('default', ['sass', 'images', 'watch'], function() {
 
 })

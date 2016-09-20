@@ -1,23 +1,114 @@
 /*
  Define Flex Styles Here
 */
-
+body {
+  opacity: 0;
+}
+#section-1,
+#section-3 {
+  p {
+    color: $weirdBrown;
+  }
+}
 section {
-  padding: 100px 0;
+  p {
+    text-align: center;
+  }
+  a {
+    font-size: 3em;
+    color: $weirdBrown;
+    padding-bottom: 10px;
+    border-bottom: 4px solid white;
+    text-align: center;
+    &:hover {
+      opacity: 0.9;
+      border-bottom: 4px solid $weirdBrown;
+    }
+  }
   .container {
     width: 100%;
     max-width: 60em;
     margin: 0 auto;
     padding: 0 50px;
   }
+  .img-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    @include media($mobile-medium) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    img {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  .img-box {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    @include media($mobile-medium) {
+      height: 300px;
+    }
+    background: center center no-repeat black;
+    background-size: cover;
+  }
+  .full-width.content-box {
+    height: auto;
+    padding: 100px 0;
+  }
+  .divider {
+    height: 2px;
+    width: 20px;
+    margin: 25px auto;
+  }
+  .content-box {
+    height: 500px;
+    @include media($mobile-medium) {
+      padding-left: 20px;
+      height: 600px;
+    }
+    p {
+      color: white;
+      width: 80%;
+    }
+  }
 }
 
 .flex-column--center {
+  height: 100%;
   flex-direction: column;
   @extend %flex-center;
 }
 
 .flex-row--center {
+  height: 100%;
   flex-direction: row;
   @extend %flex-center;
+  @include media($mobile-medium) {
+    flex-direction: column;
+  }
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $mainFont;
+  position: absolute;
+  opacity: 0.6;
+  transform: scale(1);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-weight: 400;
 }

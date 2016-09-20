@@ -2,19 +2,45 @@
  Lets define our templating content here
 */
 var content = {
+  site: {
+    title: "Cool Product",
+  },
   hero: {
-    title: "Hero Text",
-    subhead: "SubText",
+    color: "#3F61A6",
+    subhead: "Just another cool product",
   },
   content: {
     section1: {
-      detail: "Salvia air plant bitters, messenger bag lo-fi umami chicharrones gochujang vaporware flexitarian photo booth mixtape neutra. Coloring book cold-pressed thundercats, williamsburg iPhone vegan VHS quinoa celiac tofu. Synth hot chicken meditation lumbersexual, 3 wolf moon kombucha mustache twee artisan pabst cliche meh post-ironic asymmetrical. Tofu flannel hella, VHS put a bird on it gochujang meditation mumblecore.",
+      img: "images/icon-01.svg",
+      color: "white",
+      detail: "Salvia air plant bitters, messenger bag lo-fi umami chicharrones gochujang vaporware flexitarian photo booth mixtape neutra.",
     },
     section2: {
-      detail: "test",
+      header: "Header",
+      color: "#A2C5F2",
+      img: "images/img1.jpg",
+      detail: "Salvia air plant bitters, messenger bag lo-fi umami chicharrones gochujang vaporware flexitarian photo booth mixtape neutra. Coloring book cold-pressed thundercats, williamsburg iPhone vegan VHS quinoa celiac tofu. Synth hot chicken meditation lumbersexual, 3 wolf moon kombucha mustache twee artisan pabst cliche meh post-ironic asymmetrical. Tofu flannel hella, VHS put a bird on it gochujang meditation mumblecore.",
+    },
+    section3: {
+      img: "images/icon-02.svg",
+      color: "white",
+      detail: "Salvia air plant bitters, messenger bag lo-fi umami chicharrones gochujang vaporware flexitarian photo booth mixtape neutra.",
+    },
+    section4: {
+      header: "Header",
+      color: "#35528C",
+      img: "images/img2.jpg",
+      detail: "Salvia air plant bitters, messenger bag lo-fi umami chicharrones gochujang vaporware flexitarian photo booth mixtape neutra. Coloring book cold-pressed thundercats, williamsburg iPhone vegan VHS quinoa celiac tofu. Synth hot chicken meditation lumbersexual, 3 wolf moon kombucha mustache twee artisan pabst cliche meh post-ironic asymmetrical. Tofu flannel hella, VHS put a bird on it gochujang meditation mumblecore.",
+    },
+    section5: {
+      color: "white",
+      img: "images/icon-02.svg",
+      link: "http://github.com/zachurich",
+      detail: "Check out the thing here",
     },
   },
   footer: {
+    color: "#3F61A6",
     social1: {
       class: "fa fa-twitter",
       url: "http://twitter.com/zach462"
@@ -27,13 +53,8 @@ var content = {
       class: "fa fa-linkedin",
       url: "http://linkedin.com/zachurich"
     },
-    social4: {
-      class: "fa fa-github",
-      url: "http://github.com/zachurich"
-    },
   }
 }
-
 
 /* ------------------------------- */
 // Select our script element
@@ -44,3 +65,5 @@ var template = Handlebars.compile(source);
 
 // append our content to the body
 $(document.body).append(template(content));
+
+/* ------------------------------- */

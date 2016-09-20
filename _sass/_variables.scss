@@ -27,7 +27,7 @@ $slow: 0.2s ease-in-out;
 $slide: 0.5s ease-in-out;
 
 // Fonts
-$mainFont: 'Roboto', sans-serif;
+$mainFont: 'Open Sans', sans-serif;
 $navFont: 0.8em;
 $copyFont: 0.9em;
 $headerFont: 1.1em;
@@ -39,6 +39,5 @@ $intermediate: new-breakpoint(max-width 816px);
 $tablet: new-breakpoint(max-width 1090px);
 $desktop: new-breakpoint(min-width 1090px);
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);

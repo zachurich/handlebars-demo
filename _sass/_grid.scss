@@ -185,7 +185,6 @@ $toast-pulls: true !default;
   display: inline-block;
   margin-right: -.25em;
   min-height: 1px;
-  padding-left: $toast-gutter-width;
   vertical-align: top;
 
   @media (max-width: $toast-breakpoint-medium) {
@@ -300,4 +299,3 @@ $toast-pulls: true !default;
 .#{$toast-grid-column-namespace}--am {
   vertical-align: middle;
 }
-

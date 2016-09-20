@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale="1.0", user-scalable="no">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/2df561a7f4.js"></script>
@@ -10,39 +10,114 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <script id="body-content" type="text/x-handlebars-template">
-    <div class="hero">
+    <header>
+      <p>{{site.title}}</p>
+    </header>
+    <div class="hero" style="background-color: {{hero.color}}">
       <div class="flex-column--center">
-        <h1>{{hero.title}}</h1>
+        <h1>{{site.title}}</h1>
         <h2>{{hero.subhead}}</h2>
       </div>
     </div>
-    <section id="section-1">
+    <section id="section-1" style="background-color: {{content.section1.color}}">
       <div class="container">
         <div class="grid">
           <div class="grid__col grid__col--12-of-12">
+            <div class="full-width content-box">
+              <div class="flex-row--center">
+                <div class="img-circle">
+                  <img src="{{content.section1.img}}" alt="">
+                </div>
+                <p>{{content.section1.detail}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-2" style="background-color: {{content.section2.color}}">
+      <div class="grid">
+        <div class="grid__col grid__col--1-of-2">
+          <div class="flex-column--center">
+            <div class="img-box" style="background-image: url('{{content.section2.img}}');">
+              <div class="overlay" style="background-color: {{content.section2.color}}"></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid__col grid__col--1-of-2">
+          <div class="content-box">
             <div class="flex-column--center">
-              <p>{{content.section1.detail}}</p>
+              <h3>{{content.section2.header}}</h3>
+              <div class="divider"></div>
+              <p>{{content.section2.detail}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-3" style="background-color: {{content.section3.color}}">
+      <div class="container">
+        <div class="grid">
+          <div class="grid__col grid__col--12-of-12">
+            <div class="full-width content-box">
+              <div class="flex-row--center">
+                <p>{{content.section3.detail}}</p>
+                <div class="img-circle">
+                  <img src="{{content.section3.img}}" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-4" style="background-color: {{content.section4.color}}">
+      <div class="grid">
+        <div class="grid__col grid__col--1-of-2">
+          <div class="content-box">
+            <div class="flex-column--center">
+              <h3>{{content.section4.header}}</h3>
+              <div class="divider"></div>
+              <p>{{content.section4.detail}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid__col grid__col--1-of-2">
+          <div class="flex-column--center">
+            <div class="img-box" style="background-image: url('{{content.section4.img}}');">
+              <div class="overlay" style="background-color: {{content.section4.color}}"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-5" style="background-color: {{content.section5.color}}">
+      <div class="container">
+        <div class="grid">
+          <div class="grid__col grid__col--12-of-12">
+            <div class="full-width content-box">
+              <div class="flex-column--center">
+                <a href="{{content.section5.link}}">{{content.section5.detail}}</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
+    <footer style="background-color: {{footer.color}}">
       <p>Copyright 2016</p>
         <div class="social-icons">
           <a class="{{footer.social1.class}}" href="{{footer.social1.url}}"></a>
           <a class="{{footer.social2.class}}" href="{{footer.social2.url}}"></a>
           <a class="{{footer.social3.class}}" href="{{footer.social3.url}}"></a>
         </div>
-      </div>
     </footer>
   </script>
 
 
   <script src="js/main.js"></script>
+  <script src="js/functions.js"></script>
 </body>
 </html>

@@ -3,35 +3,31 @@
 */
 footer {
   width: 100%;
-  background-color: white;
   display: inline-block;
-  height: 80px;
-  .container {
+
     p {
-      display: inline-block;
+      display: block;
       height: 100%;
       font-family: $mainFont;
       font-weight: 600;
       text-align: center;
       line-height: 80px;
-      color: $mainColor;
+      color: white;
       font-size: $copyFont;
       text-transform: uppercase;
-      margin-left: 20px;
     }
     .social-icons {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 150px;
+      margin: 0 auto 20px;
       height: 100%;
       line-height: 80px;
-      float: right;
-      margin-left: 60px;
-      @include media($mobile-medium) {
-        margin-left: 0;
-      }
       a {
         line-height: 80px;
         display: inline-block;
-        color: $navColor;
+        color: white;
         height: 40px;
         width: 40px;
         border-radius: 50%;
@@ -40,5 +36,5 @@ footer {
         transition: $normal;
       }
     }
-  }
+
 }

@@ -1,0 +1,16 @@
+header {
+  display: none;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: $mainColor;
+  p {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+  }
+}
