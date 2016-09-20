@@ -6,7 +6,7 @@ var content = {
     title: "Cool Product",
   },
   hero: {
-    color: "#3F61A6",
+    color: "rgba(63,97,166, 0.8)",
     subhead: "Just another cool product",
   },
   content: {
