@@ -35,7 +35,7 @@ var content = {
     section5: {
       color: "white",
       img: "images/icon-02.svg",
-      link: "http://github.com/zachurich",
+      link: "https://github.com/zachurich/handlebars-demo",
       detail: "Check out the thing here",
     },
   },
